@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <title>Chamada Gemidão</title>
+  <meta name=theme-color content=#23d160>
+  <meta name=description content="Chamada Gemidão é o serviço que realiza ligações para fixo e móvel e ao atender o famoso aúdio do whatsapp é tocado">
+  <meta name=keywords content="chamada gemidão, chamada gemido, gemidao, gemido">
+  <meta property=og:title content="Chamada Gemidão">
+  <meta property=og:description content="Chamada Gemidão é o serviço que realiza ligações para fixo e móvel e ao atender o famoso aúdio do whatsapp é tocado">
+  <meta property=og:image content=/static/img/icon.png>
+  <meta property=og:url content="https://chamadagemidao.com/">
+  <meta property=og:type content="website ligacao chamada gemidao">
+  <meta property=og:site_name content="Chamada Gemidao">
+  <link rel=icon type=image/png href="/static/img/icon.png"/>
+  <style>
+
+    body {
+      background-color: rgba(215, 232, 219, 0.55);
+      font-family: arial,sans-serif;
+    }
+    .corpo {
+
+    }
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .mensagem {
+      font-size: 20px;
+      padding: 2rem 2rem;
+      margin: 4px 2px;
+    }
+  </style>
+</head>
+<body onclick="play()">
+
+<!-- autoplay="true" -->
+<audio style="display:none;" controls id="mulher" preload="auto" autoplay="true">
+  <source src="https://chamadagemidao.com/static/audio/mulher.mp3" type="audio/mpeg">
+</audio>
+
+<div class="corpo">
+  <div class=mensagem>
+    Ops, algo aconteceu.
+  </div>
+
+  <button class="button">
+    Clique aqui para recarregar.
+  </button>
+</div>
+<script>
+  function play() {
+    var audio = document.getElementById('mulher');
+    audio.play();
+    setTimeout(function() {
+      window.location = 'https://chamadagemidao.com/';
+    }, 10000);
+  }
+</script>
+</body>
+</html>
+
