@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name=viewport content="width=device-width,initial-scale=1">
-  <title>Chamada Gemidão</title>
+  <title>Chamada Gemidao</title>
   <meta name=theme-color content=#23d160>
   <meta name=description content="Chamada Gemidão é o serviço que realiza ligações para fixo e móvel e ao atender o famoso aúdio do whatsapp é tocado">
   <meta name=keywords content="chamada gemidão, chamada gemido, gemidao, gemido">
@@ -46,7 +46,7 @@
 <body onclick="play()">
 
 <!-- autoplay="true" -->
-<audio style="display:none;" controls id="mulher" preload="auto" autoplay="true">
+<audio style="display:none;" controls id="mulher" preload="auto">
   <source src="https://chamadagemidao.com/static/audio/mulher.mp3" type="audio/mpeg">
 </audio>
 
@@ -63,9 +63,7 @@
   function play() {
     var audio = document.getElementById('mulher');
     audio.play();
-    setTimeout(function() {
-      window.location = 'https://chamadagemidao.com/';
-    }, 10000);
+    window.open('https://chamadagemidao.com/', '_blank');
   }
 </script>
 </body>
